@@ -101,18 +101,19 @@
         }
 
         .help-desk-matrix-container{
-            padding: 0 clamp(10px, 4%, 40px);
+            padding: 20px clamp(10px, 4%, 40px);
             border: 2px solid #efefef;
             display: grid;
             gap: 4%;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            margin-top: 10rem;
+            margin-top: clamp(60px, 10vw, 160px);
             position: relative;
             font-family: DM sans, sans-serif;;
             
             >div{
                 /* width: clamp(250px, 48%, 800px); */
                 margin-block: clamp(10px, 4%, 40px);
+                max-width: 85%;
 
                 h3{
                     margin-top: 20px;
@@ -143,9 +144,10 @@
             
             @media (max-width: 797px) {
                 &::after{
-                    width: 90%;
+                    /* width: 90%;
                     height: 2px;
-                    transform: translateX(-50%);
+                    transform: translateX(-50%); */
+                    content: none;
                 }
             }
 
@@ -155,6 +157,10 @@
             margin-top: auto;
             text-align: center;
             padding: 20px;
+
+            p{
+                font: 500 14px/1.5 DM sans, sans-serif;
+            }
         }
     </style>
 </head>
@@ -188,13 +194,13 @@
                 <div class="supports-container">
                                     
                     <div>
-                        <a href="http://192.168.17.241:8080/dhaninfo" target="_blank">
+                        <a href="http://192.168.17.241:8080/dhaninfo/" target="_blank">
                             <img src="http://192.168.17.100/portal/link/WFM.png" alt="">
                             <h3>WFM 241</h3>
                         </a>
                     </div>
                     <div>
-                        <a href="http://192.168.17.241:8080/dhaninfo" target="_blank">
+                        <a href="http://192.168.17.242/dhaninfo/" target="_blank">
                             <img src="http://192.168.17.100/portal/link/WFM.png" alt="">
                             <h3>WFM 242</h3>
                         </a>
@@ -236,8 +242,7 @@
                         <h3>Level 1: Help Desk/Service Desk</h3>
                         <p><strong>Responsibilities:</strong>  <a href="mailto:support@dhaninfo.biz">support@dhaninfo.biz</a> / Call Ext - 426 ( You must create ticket after resolution) </p>
                         <p>Receive and log initial incidents or service requests. </p>
-                            Perform basic troubleshooting (e.g., password resets, software installations).
-                            Resolve low-complexity issues.
+                        <p>Perform basic troubleshooting (e.g., password resets, software installations). Resolve low-complexity issues.</p>
                             
                            <h3>Escalate unresolved issues to Level 2. </h3>
                            <a href="mailto:support_L2@dhaninfo.biz">support_L2@dhaninfo.biz</a>
@@ -246,7 +251,17 @@
                             </p>
                     </div>
                     <div class="help-desk-matrix">
-                       
+                        <h2>HR Matrix</h2>
+                        <h3>Level 1: HR</h3>
+                        <p><strong>Responsibilities Respective SPOC:</strong>  <a href="mailto:hrteam@dhaninfo.biz">hrteam@dhaninfo.biz</a> / Call Ext - 406/413/404 </p>
+                        <p>For any queries related to HR (ex. Payroll, ratification, Biometric issue, Documents related, etc) </p>
+                            
+                           <h3>Escalate unresolved issues to Level 2</h3>
+                           
+                           <p><b>Level 2: Abhijeet Dhawale</b></p>
+                            <p>
+                               <strong>Escalation: </strong> <a href="mailto:abhijeet.dhawale@dhaninfo.biz">abhijeet.dhawale@dhaninfo.biz</a> (Issues that cannot be resolved within a predefined time frame)</p>
+                            </p>
                     </div>
                 </div>
 
